@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position:relative;
+            background-color: lightblue;
+            margin:0;
+            padding: 0;
+            width: 100vw;
+            height: 80vh;
+
+        }
+        /* .ball{
+            width: 8vw;
+            height: 8vw;
+            background-color: red;
+            border-radius: 70px;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+            animation: animatex 5s linear infinite,animatey 0.5s cubic-bezier(0, 0, 0.14, 0.98) infinite alternate;
+        } */
+        .ball1{
+            width: 8vw;
+            height: 8vw;
+            background-color: red;
+            border-radius: 70px;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+            animation: animatex 4s linear infinite,animatey 0.5s cubic-bezier(0, 0, 0.14, 0.98) infinite alternate;
+        }
+
+        .earth{
+            background-color: brown;
+            width: 100vw;
+            height: 20vw;
+        }
+
+        @keyframes animatex {
+            from{
+                left: 0;
+                
+            }
+
+            to{
+                left: 100%;
+                
+            }
+        }
+
+        @keyframes animatey {
+            from{
+                bottom: 0;
+            }
+
+            to{
+                bottom: 60%;
+            }
+            
+        }
+        @keyframes animate1x {
+            from{
+                right: 0%;
+                
+            }
+
+            to{
+                right: 100%;
+                
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+        <div class="ball1">
+
+        </div>
+    </div>
+    <div class="earth"></div>
+</body>
+</html>
